@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class ReplaceWord
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the string:");
+        String phrase=sc.nextLine();
+        
+        System.out.println("Enter the word to be searched:");
+        String input=sc.nextLine();
+        
+        System.out.println("Enter the word to be replaced:");
+        String replace=sc.nextLine();
+        
+        if(phrase.contains(input))
+        {
+            System.out.println(phrase.replace(input,replace));
+        }
+        else
+        {
+            System.out.println("The word "+input+" not found");
+        }
+    }
+}
